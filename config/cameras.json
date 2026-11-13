@@ -1,0 +1,6 @@
+{
+  "prefer_sim": true,
+  "hik_od": { "index": 0, "serial": "", "use_real": false },
+  "hik_len": { "index": 1, "serial": "", "use_real": false },
+  "onna_defect": { "index": 0, "serial": "", "use_real": false }
+}

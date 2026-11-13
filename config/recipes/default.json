@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "name": "default",
+  "d_nom_mm": 8.0,
+  "d_tol_mm": 0.15,
+  "l_nom_mm": 60.0,
+  "l_tol_mm": 0.30,
+  "max_defect_grade": 1,
+  "result_timeout_ms": 800,
+  "save_ng_image": true,
+  "save_ok_sample_rate": 0.02
+}

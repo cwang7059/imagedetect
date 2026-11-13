@@ -1,0 +1,30 @@
+{
+  "schema": "imagedetect.detonator_record.v1",
+  "description": "One row per detonator after final judgment",
+  "storage": {
+    "csv": "logs/results.csv",
+    "ng_images": "logs/ng_images/"
+  },
+  "fields": [
+    { "name": "time", "type": "string", "format": "ISO8601" },
+    { "name": "slot", "type": "uint16" },
+    { "name": "seq", "type": "uint32" },
+    { "name": "recipe_id", "type": "int" },
+    { "name": "pass", "type": "bool_01" },
+    { "name": "fail_code", "type": "uint16" },
+    { "name": "fail_reason", "type": "string" },
+    { "name": "d1_mm", "type": "float", "unit": "mm" },
+    { "name": "d2_mm", "type": "float", "unit": "mm" },
+    { "name": "od_ok", "type": "bool_01" },
+    { "name": "od_ms", "type": "int", "unit": "ms" },
+    { "name": "length_mm", "type": "float", "unit": "mm" },
+    { "name": "length_ok", "type": "bool_01" },
+    { "name": "length_ms", "type": "int", "unit": "ms" },
+    { "name": "defect_grade", "type": "int" },
+    { "name": "defect_count", "type": "int" },
+    { "name": "defect_ok", "type": "bool_01" },
+    { "name": "defect_ms", "type": "int", "unit": "ms" },
+    { "name": "defect_summary", "type": "string" },
+    { "name": "ng_image", "type": "string" }
+  ]
+}

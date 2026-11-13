@@ -1,0 +1,7 @@
+{
+  "station": "ST2",
+  "mm_per_pixel": 0.125,
+  "roi": [20, 40, 600, 160],
+  "threshold": 90,
+  "min_run_px": 20
+}

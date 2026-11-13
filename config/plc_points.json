@@ -1,0 +1,53 @@
+{
+  "schema": "imagedetect.plc_points.v1",
+  "description": "Siemens S7 DB layout for detonator line. Offsets are bytes in DB.",
+  "connection": {
+    "protocol": "s7",
+    "ip": "192.168.0.1",
+    "rack": 0,
+    "slot": 1,
+    "db_number": 100,
+    "poll_ms": 20,
+    "heartbeat_ms": 500
+  },
+  "fail_codes": {
+    "0": "None",
+    "1": "OdOutOfTol",
+    "2": "LengthOutOfTol",
+    "3": "Defect",
+    "4": "TimeoutMissing",
+    "5": "AlgoError",
+    "6": "CommError",
+    "7": "Unknown"
+  },
+  "plc_to_pc": {
+    "HeartBeat":   { "db": 100, "offset": 0,  "type": "bool", "bit": 0 },
+    "SysReady":    { "db": 100, "offset": 0,  "type": "bool", "bit": 1 },
+    "Reset":       { "db": 100, "offset": 0,  "type": "bool", "bit": 2 },
+    "ClearAlarm":  { "db": 100, "offset": 0,  "type": "bool", "bit": 3 },
+    "Trig_ST1":    { "db": 100, "offset": 1,  "type": "bool", "bit": 0 },
+    "Trig_ST2":    { "db": 100, "offset": 1,  "type": "bool", "bit": 1 },
+    "Trig_ST3":    { "db": 100, "offset": 1,  "type": "bool", "bit": 2 },
+    "Trig_Judge":  { "db": 100, "offset": 1,  "type": "bool", "bit": 3 },
+    "Slot_ST1":    { "db": 100, "offset": 2,  "type": "uint16" },
+    "Slot_ST2":    { "db": 100, "offset": 4,  "type": "uint16" },
+    "Slot_ST3":    { "db": 100, "offset": 6,  "type": "uint16" },
+    "Slot_Judge":  { "db": 100, "offset": 8,  "type": "uint16" },
+    "ProductSeq":  { "db": 100, "offset": 10, "type": "uint32" },
+    "RecipeId":    { "db": 100, "offset": 14, "type": "uint16" }
+  },
+  "pc_to_plc": {
+    "PcAlive":       { "db": 100, "offset": 20, "type": "bool", "bit": 0 },
+    "Busy":          { "db": 100, "offset": 20, "type": "bool", "bit": 1 },
+    "Fault":         { "db": 100, "offset": 20, "type": "bool", "bit": 2 },
+    "Result_Ready":  { "db": 100, "offset": 20, "type": "bool", "bit": 3 },
+    "PassFail":      { "db": 100, "offset": 20, "type": "bool", "bit": 4 },
+    "Result_Slot":   { "db": 100, "offset": 22, "type": "uint16" },
+    "FailCode":      { "db": 100, "offset": 24, "type": "uint16" },
+    "Measure_D1":    { "db": 100, "offset": 26, "type": "real" },
+    "Measure_D2":    { "db": 100, "offset": 30, "type": "real" },
+    "Measure_L":     { "db": 100, "offset": 34, "type": "real" },
+    "DefectGrade":   { "db": 100, "offset": 38, "type": "uint16" }
+  },
+  "db_size_bytes": 64
+}

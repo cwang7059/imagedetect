@@ -1,0 +1,6 @@
+time,slot,seq,recipe_id,pass,fail_code,fail_reason,d1_mm,d2_mm,od_ok,od_ms,length_mm,length_ok,length_ms,defect_grade,defect_count,defect_ok,defect_ms,defect_summary,ng_image
+2026-11-13T15:01:02,1,10001,1,1,0,"OK",7.98,8.02,1,12,60.05,1,9,0,0,1,18,"defects=0 max_area=0 grade=0",
+2026-11-13T15:01:03,2,10002,1,0,1,"OD out of tolerance D1=8.42 D2=8.11",8.42,8.11,1,11,59.90,1,8,0,0,1,17,"defects=0 max_area=0 grade=0",NG_slot2_seq10002_20261113_150103.raw
+2026-11-13T15:01:04,3,10003,1,0,2,"Length out of tolerance L=61.20",8.01,7.99,1,10,61.20,1,9,0,0,1,16,"defects=0 max_area=0 grade=0",NG_slot3_seq10003_20261113_150104.raw
+2026-11-13T15:01:05,4,10004,1,0,3,"Defect grade 2 > max 1",7.97,8.00,1,12,60.10,1,8,2,1,1,22,"defects=1 max_area=220 grade=2",NG_slot4_seq10004_20261113_150105.raw
+2026-11-13T15:01:06,5,10005,1,0,4,"Timeout or missing station",0,0,0,0,0,0,0,0,0,0,0,"",NG_slot5_seq10005_20261113_150106.raw

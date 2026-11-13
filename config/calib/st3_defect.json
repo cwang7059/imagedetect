@@ -1,0 +1,8 @@
+{
+  "station": "ST3",
+  "roi": [10, 10, 620, 220],
+  "threshold": 70,
+  "min_blob_area": 80,
+  "grade_area_bins": [80, 200, 500],
+  "blur_ksize": 5
+}

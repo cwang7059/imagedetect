@@ -1,0 +1,10 @@
+{
+  "station": "ST1",
+  "mm_per_pixel": 0.131,
+  "roi": [40, 20, 560, 200],
+  "end_a_x_ratio": 0.18,
+  "end_b_x_ratio": 0.82,
+  "band_half_width_px": 24,
+  "threshold": 90,
+  "min_edge_pixels": 8
+}

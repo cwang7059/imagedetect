@@ -1,0 +1,15 @@
+.qmake.stash
+Makefile
+Makefile.*
+release/
+debug/
+*_macros.*
+ui_*.h
+moc_*.cpp
+moc_*.h
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.lib
